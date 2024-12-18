@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  padding-inline: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.left-nav img {
+  height: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #eb374e;
+}
+
+.right-nav a {
+  background-color: #eb374e;
+  padding-inline: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+}
+
+.right-nav a:hover {
+  background-color: #d10621;
+  color: white;
+}
+
+.right-nav .icon {
+  display: none;
+}
+.personal {
+  display: flex;
+  padding-inline: 50px;
+  padding-top: 40px;
+  padding-bottom: 32px;
+  gap: 32px;
+}
+
+.card {
+  width: 450px;
+  border: 1px solid black;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.image img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.card table {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 6px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.card table tr th {
+  font-weight: 600;
+  padding: 6px;
+}
+
+/* nth:child pseudo class untuk milih elemen
+yang punya posisi tertentu di urutan anak elemen
+argumen odd/even untuk memilih posisi dengan urutan ganjil/genap */
+.card table tr:nth-child(even) {
+  background-color: #ffaab5;
+}
+
+.right h2 {
+  margin: 0;
+}
+
+.right p {
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.skill {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.frontend {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 280px;
+}
+
+.backend {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 16px;
+  max-width: 280px;
+}
+
+.skill img {
+  width: 60px;
+  height: 60px;
+}
+
+.findme {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.social a img {
+  width: 50px;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding-inline: 16px;
+    align-items: center;
+  }
+
+  .left-nav {
+    gap: 16px;
+    align-items: center;
+  }
+
+  .left-nav img {
+    height: 24px;
+  }
+
+  .right-nav a {
+    display: none;
+  }
+
+  .right-nav .icon {
+    display: block;
+    background-color: black;
+  }
+
+  .right-nav .icon:hover {
+    background-color: black;
+  }
+  material-symbols-outlined {
+    color: white;
+  }
+
+  material-symbols-outlined:hover {
+    color: #d10621;
+  }
+
+  .personal {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 16px;
+  }
+  .left {
+    display: flex;
+    justify-content: center;
+  }
+  .card {
+    max-width: fit-content;
+  }
+
+  .backend,
+  .frontend {
+    max-width: fit-content;
+  }
+}
