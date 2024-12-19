@@ -56,6 +56,7 @@ nav a:hover {
 .blog {
   padding: 20px 50px;
   display: flex;
+  gap: 25px;
   justify-content: space-between;
 }
 
@@ -63,7 +64,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  width: 70%;
+  flex: 70%;
 }
 
 .blog-list-item {
@@ -73,8 +74,13 @@ nav a:hover {
   padding: 8px;
 }
 
+.blog-image {
+  max-width: 300px;
+}
 .blog-image img {
-  width: 300px;
+  width: 100%; /* Sesuaikan dengan lebar elemen induk */
+  height: 100%;
+  object-fit: cover;
 }
 
 .blog-content {
@@ -83,7 +89,7 @@ nav a:hover {
 
 /* BLOG FORM */
 .blog-form {
-  width: 25%;
+  flex: 25%;
 }
 
 .form-container {
@@ -135,6 +141,24 @@ form button {
   nav {
     padding-inline: 16px;
     align-items: center;
+  }
+
+  .blog {
+    flex-direction: column;
+    padding: 20px 30px;
+  }
+
+  .blog-list,
+  .blog-form {
+    flex: 100%;
+  }
+
+  .blog-form {
+    width: 90%;
+  }
+
+  .blog-list-item {
+    flex-direction: column;
   }
 
   .left-nav {

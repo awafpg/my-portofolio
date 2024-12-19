@@ -9,10 +9,10 @@ function addBlog(event) {
   let title = document.getElementById("input-blog-title").value;
   let description = document.getElementById("input-blog-content").value;
   let image = document.getElementById("input-blog-image");
-  console.log("🚀 ~ addBlog ~ sebeum image:", image);
+  console.log("~ addBlog ~ sebelum image:", image);
 
   image = URL.createObjectURL(image.files[0]);
-  console.log("🚀 ~ addBlog ~ sesudah image:", image);
+  console.log("~ addBlog ~ sesudah image:", image);
 
   //   data object
   const blog = {
